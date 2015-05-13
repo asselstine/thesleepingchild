@@ -1,7 +1,11 @@
-@import "style/bourbon/_bourbon";
-@import "style/neat/_neat";
-@import "style/guide";
-@import "style_guide";
+@import "style/guide",
+        "style_guide",
+        "landing_page/style/ad.scss",
+        "landing_page/style/carousel.scss",
+        "landing_page/style/services.scss",
+        "landing_page/style/splash.scss",
+        "landing_page/style/team.scss",
+        "landing_page/style/testimonials.scss";
 
 .center {
   text-align: center;
@@ -110,57 +114,7 @@ header {
 
 
 
-.carousel {
 
-  * {
-    font-family: $gothamrnd-light-family;
-    color: white;
-  }
-
-  font-size: 1.5em;
-
-  .m-item {
-    position: relative;
-    .overlay {
-      position: absolute;
-      top: 3rem;
-      padding: 3rem;
-      max-width: 500px;
-    }
-  }
-  img {
-    width: 100%;
-    max-width: none;
-  }
-
-  blockquote {
-    position: relative;
-    margin: 0;
-    color: white;
-    &::before,
-    &::after {
-      color: white;
-      background-color: $roseMelon;
-      border-radius: 0.5em;
-      width: 0.7em;
-      height: 0.7em;
-      padding-top: 0.02em;
-      display: inline-block;
-      text-align: center;
-      position: relative;
-      top: -0.1em;
-    }
-    &::before {
-      content: "“";
-      position: absolute;
-      left: -0.8em;
-    }
-    &::after {
-      content: "”";
-    }
-  }
-
-}
 
 
 
@@ -171,154 +125,4 @@ header {
 section {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-
-
-
-.splash {
-  background-color: $breezeBlocks;
-  text-align: center;
-
-  padding: 2rem $paddingSides;
-
-  h1,h2,h3,h4,h5,h6 {
-    color: $darkTropiteal;
-  }
-  p {
-    color: white;
-  }
-}
-
-
-
-
-.team {
-  text-align: center;
-
-  .member {
-    display: inline-block;
-    width: 50%;
-    box-sizing: border-box;
-    padding: 3rem;
-  }
-
-  img {
-    max-width: 300px;
-    width: 90%;
-  }
-
-  > p {
-    padding-left: $paddingSides;
-    padding-right: $paddingSides;
-  }
-
-}
-
-.testimonials {
-
-  h3 {
-    font-size: 1.5em;
-  }
-
-  .m-scooch-inner {
-    text-align: center;
-  }
-
-  .m-item {
-    padding-left: $paddingSides;
-    padding-right: $paddingSides;
-    //position: absolute;
-  }
-
-  color: $roseMelon;
-  font-family: $roboto-thin-italic-family;
-  b {
-    font-weight:normal;
-    font-family: $roboto-medium-italic-family;
-  }
-
-  .m-scooch-controls {
-    $controlSize: 14px;
-    $verticalScale: 0.8;
-    a {
-      position: absolute;
-      top: 50%;
-      display: block;
-      width: 0;
-      height: 0;
-      padding: 0;
-      margin-top: -1 * $controlSize * $verticalScale;
-      color: transparent;
-    }
-    a[data-m-slide='prev'] {
-      left: 2rem;
-      border-right: $controlSize solid $skydive;
-      border-top: $controlSize*$verticalScale solid transparent;
-      border-bottom: $controlSize*$verticalScale solid transparent;
-    }
-    a[data-m-slide='next'] {
-      right: 2rem;
-      border-left: $controlSize solid $skydive;
-      border-top: $controlSize*$verticalScale solid transparent;
-      border-bottom: $controlSize*$verticalScale solid transparent;
-    }
-  }
-}
-
-
-
-.ad {
-  background-color: $darkTropiteal;
-  color: white;
-  position: relative;
-
-  padding-bottom: 4rem;
-
-  padding-left: $paddingSides;
-  padding-right: 40%;
-
-  img {
-    position: absolute;
-    top: 0;
-    right: 3rem;
-    max-width: 300px;
-  }
-
-}
-
-
-
-
-
-
-
-.services {
-  h2 {
-    text-align: center;
-  }
-  .service {
-    padding-bottom: 2rem;
-    .button {
-      background-color: $tropiteal;
-      padding: 1rem 3.3rem;
-    }
-    h4 {
-      color: $roseMelon;
-      font-family: $roboto-light-family;
-    }
-    .image {
-      display: inline-block;
-      width: 40%;
-      padding: 2rem;
-      img {
-        max-width: 230px;
-      }
-    }
-    .description {
-      display: inline-block;
-      width: 60%;
-      vertical-align: top;
-    }
-  }
 }

@@ -1,0 +1,51 @@
+.carousel {
+
+  * {
+    font-family: $gothamrnd-light-family;
+    color: white;
+  }
+
+  font-size: 1.5em;
+
+  .m-item {
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 3rem;
+      padding: 3rem;
+      max-width: 500px;
+    }
+  }
+  img {
+    width: 100%;
+    max-width: none;
+  }
+
+  blockquote {
+    position: relative;
+    margin: 0;
+    color: white;
+    &::before,
+    &::after {
+      color: white;
+      background-color: $roseMelon;
+      border-radius: 0.5em;
+      width: 0.7em;
+      height: 0.7em;
+      padding-top: 0.02em;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      top: -0.1em;
+    }
+    &::before {
+      content: "\201C";
+      position: absolute;
+      left: -0.8em;
+    }
+    &::after {
+      content: "\201D";
+    }
+  }
+
+}

@@ -1,7 +1,20 @@
-@import "fonts",
+@import "bourbon/_bourbon",
+        "neat/_neat",
+        "fonts",
         "colours";
 
-$paddingSides: 5rem;
+$medium-min: 768px;
+$large-min: 1440px;
+
+$small-only: new-breakpoint(max-width $medium-min);
+$medium-up: new-breakpoint(min-width $medium-min);
+
+
+@include media($medium-up) {
+  $paddingSides: 5rem;
+}
+$paddingSides: 2rem;
+
 
 
 @mixin h1 {

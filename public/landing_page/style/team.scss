@@ -1,0 +1,21 @@
+.team {
+  text-align: center;
+
+  .member {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 3rem;
+  }
+
+  img {
+    max-width: 300px;
+    width: 90%;
+  }
+
+  > p {
+    padding-left: $paddingSides;
+    padding-right: $paddingSides;
+  }
+
+}
