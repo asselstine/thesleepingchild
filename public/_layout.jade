@@ -7,12 +7,7 @@ html
     link(rel="stylesheet" href="/main.css")
     link(rel="stylesheet" href="/vendor/scooch/scooch.min.css")
   body
-
-    header
-      include header.jade
-
+    include header.jade
     .content
       != yield
-
-    footer
-      include footer.jade
+    include footer.jade
