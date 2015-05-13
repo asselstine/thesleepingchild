@@ -1,0 +1,37 @@
+@import "style/bourbon/_bourbon";
+@import "style/neat/_neat";
+@import "style/fonts";
+
+.center {
+  text-align: center;
+}
+
+body{
+  font-family: gothamrnd-medium "Helvetica";
+  padding: 50px 20px 0;
+  background: #f4f4f7;
+  color: #444;
+  margin: 0;
+
+  img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 1.2em;
+  border-bottom: #CCC solid 1px;
+  padding: 20px 0;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+strong {
+  font-family: $gothamrnd-bold-family;
+}

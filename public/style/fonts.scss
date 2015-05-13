@@ -1,0 +1,16 @@
+@font-face {
+font-family: gothamrnd-light;
+src: url("fonts/gothamrnd-light.ttf") format("truetype");
+}
+@font-face {
+font-family: gothamrnd-medium;
+src: url("fonts/gothamrnd-medium.ttf") format("truetype");
+}
+@font-face {
+font-family: gothamrnd-bold;
+src: url("fonts/gothamrnd-bold.ttf") format("truetype");
+}
+
+$gothamrnd-light-family: 'gothamrnd-light' "Helvetica";
+$gothamrnd-medium-family: 'gothamrnd-medium' "Helvetica";
+$gothamrnd-bold-family: 'gothamrnd-bold' "Helvetica";
