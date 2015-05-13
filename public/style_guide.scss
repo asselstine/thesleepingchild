@@ -1,0 +1,33 @@
+
+.colors {
+
+  > * {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    max-width: 100%;
+  }
+
+  .breezeBlocks {
+    background-color: $breezeBlocks;
+  }
+  .skydive {
+    background-color: $skydive;
+  }
+  .tropiteal {
+    background-color: $tropiteal;
+  }
+  .charcoal {
+    background-color: $charcoal;
+  }
+  .slate {
+    background-color: $slate;
+  }
+  .roseMelon {
+    background-color: $roseMelon;
+  }
+  .papaya {
+    background-color: $papaya;
+  }
+
+}

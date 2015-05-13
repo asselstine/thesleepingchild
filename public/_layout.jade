@@ -1,6 +1,18 @@
 doctype
 html
   head
+    script(type='text/javascript' src='/vendor/jquery-1.11.3.min.js')
+    script(type='text/javascript' src='/vendor/scooch/scooch.min.js')
+    script(type='text/javascript' src='/scripts/main.js')
     link(rel="stylesheet" href="/main.css")
+    link(rel="stylesheet" href="/vendor/scooch/scooch.min.css")
   body
-    != yield
+
+    header
+      include header.jade
+
+    .content
+      != yield
+
+    footer
+      include footer.jade

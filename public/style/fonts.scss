@@ -14,3 +14,48 @@ src: url("fonts/gothamrnd-bold.ttf") format("truetype");
 $gothamrnd-light-family: 'gothamrnd-light' "Helvetica";
 $gothamrnd-medium-family: 'gothamrnd-medium' "Helvetica";
 $gothamrnd-bold-family: 'gothamrnd-bold' "Helvetica";
+
+
+
+@font-face {
+font-family: roboto-thin;
+src: url("fonts/Roboto/Roboto-Thin_0.ttf") format("truetype");
+}
+@font-face {
+font-family: roboto-thin-italic;
+src: url("fonts/Roboto/Roboto-ThinItalic_0.ttf") format("truetype");
+}
+@font-face {
+font-family: roboto-light;
+src: url("fonts/Roboto/Roboto-Light_0.ttf") format("truetype");
+}
+@font-face {
+font-family: roboto-light-italic;
+src: url("fonts/Roboto/Roboto-LightItalic_0.ttf") format("truetype");
+}
+@font-face {
+font-family: roboto-medium;
+src: url("fonts/Roboto/Roboto-Medium_0.ttf") format("truetype");
+}
+@font-face {
+font-family: roboto-medium-italic;
+src: url("fonts/Roboto/Roboto-MediumItalic_0.ttf") format("truetype");
+}
+@font-face {
+font-family: roboto-bold;
+src: url("fonts/Roboto/Roboto-Bold_0.ttf") format("truetype");
+}
+@font-face {
+font-family: roboto-black;
+src: url("fonts/Roboto/Roboto-Black_0.ttf") format("truetype");
+}
+
+
+$roboto-thin-family: 'roboto-thin' "Helvetica";
+$roboto-thin-italic-family: 'roboto-thin-italic' "Helvetica";
+$roboto-light-family: 'roboto-light' "Helvetica";
+$roboto-light-italic-family: 'roboto-light-italic' "Helvetica";
+$roboto-medium-family: 'roboto-medium' "Helvetica";
+$roboto-medium-italic-family: 'roboto-medium-italic' "Helvetica";
+$roboto-bold-family: 'roboto-bold' "Helvetica";
+$roboto-black-family: 'roboto-black' "Helvetica";

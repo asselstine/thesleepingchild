@@ -1,6 +1,9 @@
 @import "fonts",
         "colours";
 
+$paddingSides: 5rem;
+
+
 @mixin h1 {
   font-family: $gothamrnd-bold-family;
   font-size: 3rem;
@@ -9,8 +12,26 @@
 @mixin h2 {
   font-family: $gothamrnd-medium-family;
   font-size: 2rem;
+  color: $darkTropiteal;
+}
+
+@mixin h3 {
+
 }
 
 @mixin body {
   font-family: $gothamrnd-light-family;
+}
+
+@mixin sc-button {
+  font-family: $gothamrnd-medium-family;
+  color: white;
+  border-radius: 7px;
+  padding: 1rem 1.3rem;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+@mixin a {
+  text-decoration: none;
 }
