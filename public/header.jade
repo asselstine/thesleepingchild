@@ -3,9 +3,12 @@ header
     img(src='/images/sleepingchild-logo-inverse.png' alt='The Sleeping Child').logo
   nav
     ul
+
       li(class="#{ current.source == 'evaluations' ? 'active' : '' }")
         a(href='/evaluations') Free Evaluations
+
       li(class="#{ current.source == 'consultations' ? 'active' : '' }")
         a(href='/consultations') Consultations
+
       li(class="#{ current.source == 'workshops' ? 'active' : '' }")
         a(href='/workshops') Workshops

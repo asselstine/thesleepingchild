@@ -52,6 +52,7 @@ p em {
 }
 
 .contain {
+  padding: 1rem;
   @include contain();
 }
 

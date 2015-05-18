@@ -3,9 +3,10 @@
 .team {
   text-align: center;
 
+  @include row();
+
   .member {
-    display: inline-block;
-    width: 50%;
+    @include span-columns(6);
     box-sizing: border-box;
     padding: 3rem;
   }
@@ -16,6 +17,7 @@
   }
 
   > p {
+    @include span-columns(12);
     padding-left: $paddingSides;
     padding-right: $paddingSides;
   }
