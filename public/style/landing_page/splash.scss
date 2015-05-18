@@ -1,5 +1,7 @@
+@import "../guide";
+
 .splash {
-  background-color: $breezeBlocks;
+  background-color: $lightSlate;
   text-align: center;
 
   padding: 2rem $paddingSides;
@@ -9,5 +11,6 @@
   }
   p {
     color: white;
+    font-size: 1.2em;
   }
 }

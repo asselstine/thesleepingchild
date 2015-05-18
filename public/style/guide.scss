@@ -30,15 +30,28 @@ $paddingSides: 2rem;
   font-family: $gothamrnd-light-family;
 }
 
-@mixin sc-button {
-  font-family: $gothamrnd-medium-family;
+@mixin plain-button($bgColor: $tropiteal) {
   color: white;
+  border: none;
   border-radius: 7px;
   padding: 1rem 1.3rem;
   font-size: 1.1rem;
   display: inline-block;
+  background: $bgColor;
+  margin-bottom: 0.5rem;
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover {
+    background-color: scale-color($bgColor, $lightness: -10%);
+  }
+}
+
+@mixin sc-button {
+  font-family: $gothamrnd-medium-family;
+  @include plain-button($papaya);
 }
 
 @mixin a {
+  color: $darkTropiteal;
   text-decoration: none;
 }

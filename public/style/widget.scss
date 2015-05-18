@@ -27,6 +27,10 @@ body {
 div.gridDays {
 }
 
+a {
+  @include a();
+}
+
 div.gridDay {
 
   text-align: center;
@@ -43,39 +47,66 @@ div.gridDay {
     border-bottom: 1px solid $breezeBlocks;
   }
 
-  div.gridSlot {
+  div.gridSlot a,
+  div.gridBusy {
     padding: 0.2rem;
     @include media($medium-up) {
       padding: 1rem;
     }
+  }
 
+  div.gridSlot {
     a {
-      color: #7FCDC4 !important;
+      display: block;
+      color: #7FCDC4;
       text-decoration: none;
+      transition: 0.2s;
       &:hover {
-        color: #7FCDC4 !important;
-        text-decoration: underline;
+        color: white;
+        background-color: $breezeBlocks;
       }
     }
   }
 
 }
 
-button {
-  color: white;
-  border: none;
-  border-radius: 7px;
-  padding: 1rem 1.3rem;
-  font-size: 1.1rem;
-  display: inline-block;
-  background: #1DA6AC;
+.body {
+  @include contain();
 }
 
-input {
-  border: none;
-  box-shadow: none;
-  transition: 0.5s;
+button {
+  @include plain-button;
+}
 
+textarea {
+  display: block;
+}
+
+.item {
+  margin-bottom: 1rem;
+}
+
+.kaptchaMessage {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+input, textarea {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+  transition: 0.5s;
+  outline: 0;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  color: $charcoal;
+  width: 100%;
+  max-width: 20rem;
+  &:focus {
+    background-color: #fafafa;
+  }
 }
 input:focus {
   box-shadow: 1px 1px black;

@@ -1,11 +1,11 @@
 @import "style/guide",
         "style_guide",
-        "landing_page/style/ad.scss",
-        "landing_page/style/carousel.scss",
-        "landing_page/style/services.scss",
-        "landing_page/style/splash.scss",
-        "landing_page/style/team.scss",
-        "landing_page/style/testimonials.scss";
+        "style/landing_page/ad.scss",
+        "style/landing_page/carousel.scss",
+        "style/landing_page/services.scss",
+        "style/landing_page/splash.scss",
+        "style/landing_page/team.scss",
+        "style/landing_page/testimonials.scss";
 
 .center {
   text-align: center;
@@ -26,12 +26,6 @@ b {
   font-family: $roboto-medium-family;
 }
 
-.content {
-  a {
-    @include sc-button();
-  }
-}
-
 h1 { @include h1(); }
 h2 { @include h2(); }
 h3 { @include h3(); }
@@ -46,7 +40,9 @@ a {
 
 a.button {
   @include sc-button();
-  background-color: $papaya;
+  &.papaya {
+    background-color: $papaya;
+  }
 }
 
 p em {
@@ -55,7 +51,9 @@ p em {
   color: $roseMelon;
 }
 
-
+.contain {
+  @include contain();
+}
 
 
 

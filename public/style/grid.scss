@@ -1,6 +1,18 @@
 
 $medium-min: 768px;
-$large-min: 1440px;
+$large-min: 1200px;
 
 $small-only: new-breakpoint(max-width $medium-min);
 $medium-up: new-breakpoint(min-width $medium-min);
+$large-up: new-breakpoint(min-width $large-min);
+
+@mixin contain() {
+  @include outer-container;
+  @include row();
+  > * {
+    @include media($medium-up) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+  }
+}

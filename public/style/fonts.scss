@@ -11,11 +11,9 @@ font-family: gothamrnd-bold;
 src: url("fonts/gothamrnd-bold.ttf") format("truetype");
 }
 
-$gothamrnd-light-family: 'gothamrnd-light' "Helvetica";
-$gothamrnd-medium-family: 'gothamrnd-medium' "Helvetica";
-$gothamrnd-bold-family: 'gothamrnd-bold' "Helvetica";
-
-
+$gothamrnd-light-family: 'gothamrnd-light' "roboto-light";
+$gothamrnd-medium-family: 'gothamrnd-medium' "roboto-medium";
+$gothamrnd-bold-family: 'gothamrnd-bold' "roboto-bold";
 
 @font-face {
 font-family: roboto-thin;

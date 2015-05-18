@@ -1,3 +1,5 @@
+@import "../guide";
+
 .carousel {
 
   @include media($small-only) {

@@ -1,0 +1,51 @@
+@import "../guide";
+
+.services {
+  @include outer-container;
+
+  h2 {
+    text-align: center;
+  }
+  .service {
+
+    padding: 1rem;
+
+    @include row();
+
+    padding-bottom: 2rem;
+    .button {
+      background-color: $tropiteal;
+      padding: 1rem 3.3rem;
+    }
+    h4 {
+      color: $roseMelon;
+      font-family: $roboto-light-family;
+    }
+    aside {
+
+      @include media($medium-up) {
+        @include span-columns(6);
+      }
+      @include media($large-up) {
+        @include span-columns(4);
+      }
+
+
+      padding-top: 1.7rem;
+      img {
+        max-width: 230px;
+      }
+    }
+    .description {
+
+      @include media($medium-up) {
+        @include span-columns(6);
+      }
+      @include media($large-up) {
+        @include span-columns(8);
+      }
+
+      vertical-align: top;
+    }
+  }
+}
