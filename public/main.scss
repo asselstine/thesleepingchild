@@ -20,15 +20,6 @@ body{
   padding: 0;
   margin: 0;
 
-  img {
-    margin: 0 auto;
-    display: block;
-    width: 100%;
-    max-width: 800px;
-  }
-
-
-
 }
 
 b {
@@ -76,6 +67,7 @@ p em {
 
 header {
   background-color: $darkTropiteal;
+  margin-bottom: 1rem;
   @include clearfix();
 
   .logo {

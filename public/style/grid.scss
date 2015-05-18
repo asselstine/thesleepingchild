@@ -1,0 +1,6 @@
+
+$medium-min: 768px;
+$large-min: 1440px;
+
+$small-only: new-breakpoint(max-width $medium-min);
+$medium-up: new-breakpoint(min-width $medium-min);

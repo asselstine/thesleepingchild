@@ -1,0 +1,420 @@
+
+<style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Roboto&v2);
+
+
+	div.gridHeader {
+		color: #FFFFFF !important;
+		background-color:#1DA6AC !important;
+	}
+
+
+	div.gridBusy, div.gridTechnicallyFree {
+		color: #808080 !important;
+		background-color:#89A6AC !important;
+	}
+
+
+	div.gridFree {
+		background-color:#ffffff !important;
+		color: #000000 !important;
+	}
+	div.gridFree a, div.gridFree a:link, div.gridFree a:visited, div.gridFree a:hover, div.gridFree a:active {
+		color: #000000 !important;
+	}
+
+
+	body {font-family: 'Roboto' !important;}
+
+	body {color: #7FCDC4; !important}
+	h1, h2, h3, h4 {font-family: 'Roboto' !important;}
+
+	h1, h2, h3, h4 {color: #ffffff !important;}
+	h1 a, h2 a, h3 a, h4 a {color: #ffffff !important;}
+	h1.title {font-family: 'Roboto' !important;}
+
+	h1.title {color: #ffffff !important;}
+
+</style>
+
+		<div class="content">
+
+			<div class="header noText">
+				<div class="headerStart"></div>
+				<img class="logo square smallImage" src="https://upload.youcanbook.me/v/ycbm/GFKdKTYrrNGx6ae9PMDR/images/sleepingchild-master-png.png">
+				<h1 class="title">The Sleeping Child</h1>
+
+				<div class="headerEnd"></div>
+			</div>
+
+
+			<div class="main">
+				<div class="mainStart"></div>
+				<div style="display:none;" id="spinner"><img src="/resources/pics/spinner-big.gif" class="square smallImage"></div>
+
+				<div class="dialogue bookingForm">
+					<form action="/Book.do" method="post" id="theform">
+
+
+						<div class="item">
+
+							<div class="itemLabel"><p>Booking:</p>
+</div>
+							<div class="itemContent">
+
+
+
+
+
+
+
+								<p>Wednesday, May 20, 2015 8:00 AM</p>
+
+
+
+
+
+
+
+
+							</div>
+							<div id="error1" class="warning" style="display:none;"></div>
+
+						</div>
+
+
+						<div class="item">
+
+							<div class="itemLabel"><p>Your Name:</p>
+</div>
+							<div class="itemContent">
+
+								<input name="field2" maxlength="1000" value="" class="dialogueText">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							</div>
+							<div id="error2" class="warning" style="display:none;"></div>
+
+						</div>
+
+
+						<div class="item required">
+
+							<div class="itemLabel"><p>Your Email:</p>
+</div>
+							<div class="itemContent">
+
+								<input name="field3" maxlength="1000" value="" class="dialogueText">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							</div>
+							<div id="error3" class="warning" style="display:none;"></div>
+
+						</div>
+
+
+						<div class="item">
+
+							<div class="itemLabel"><p>Notes:</p>
+</div>
+							<div class="itemContent">
+
+
+
+
+								<textarea name="field4" class="dialogueTextArea"></textarea>
+
+
+
+
+
+
+
+
+
+
+
+							</div>
+							<div id="error4" class="warning" style="display:none;"></div>
+
+						</div>
+
+
+
+						<div class="item captcha">
+							<div class="itemLabel"></div>
+							<div class="itemContent">
+
+								<div class="kaptcha">
+									<div class="kaptchaImage"><img src="/kaptcha.jpg?r=kAyriFYX5adu87ZLktCC" onclick="this.src='/kaptcha.jpg?'+Math.random();" alt="Click here to get a new challenge." title="Click here to get a new challenge." class="square smallImage"></div>
+									<div class="kaptchaMessage">Type the five letters:</div>
+									<div class="kaptchaResponse"><input name="kaptcha" id="kaptcha" maxsize="5"></div>
+									<div class="kaptchaRequired warning" id="kaptchaRequired" style="display:none;">Please enter the characters as they appear above. Click the image to get a new challenge.</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="item formButtons">
+							<div class="itemLabel"></div>
+							<div class="itemContent">
+								<button type="submit" id="submitButton"><span>Confirm Booking</span></button>
+								<button type="submit" id="cancelButton" onclick="window.history.back(); return false;"><span>Cancel</span></button>
+								<div id="errorForm" class="warning" style="display:none;"><span>Please fix the problems above.</span></div>
+							</div>
+						</div>
+						<input type="hidden" name="bf" value="true">
+						<input type="hidden" name="not-specified" value="Not specified">
+						<input type="hidden" name="bfd" value="1431577654214">
+
+
+
+						<input type="hidden" name="cal" value="UsfvjXFz3XaKddRxefV7">
+
+
+
+
+
+						<input type="hidden" name="slot" value="1432108800000">
+
+
+
+						<input type="hidden" name="rcfix" value="123">
+					</form>
+				</div>
+				<div class="mainEnd"></div>
+			</div>
+
+			<div class="footer">
+				<div class="footerStart"></div>
+
+				<div class="footerEnd"></div>
+			</div>
+
+
+
+
+
+			<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/resources/scripts/ycbm.service.min.js?v=20150513090558"></script>
+
+
+
+
+
+		<script type="text/javascript">
+			//addToHomescreen.removeSession()
+			addToHomescreen({
+			   skipFirstVisit: false,
+			   maxDisplayCount: 3,
+			   lifespan:20,
+			   displayPace:60
+			   //debug:true
+			});
+		</script>
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57420767-1', 'auto');
+  ga('create', 'UA-155464-7', 'youcanbook.me', {'name': 'oldTracker'});
+  ga('set', 'dimension1', 'peso');
+  ga('set', 'dimension2', 'Service');
+
+  ga('set', 'dimension3', 'professional');
+
+
+  ga('send', 'pageview');
+  ga('oldTracker.send', 'pageview');
+</script>
+
+
+
+		</div>
+
+		<script type="text/javascript" language="JavaScript">
+			(function($){
+
+				$("#duration").bind("change", function() {
+
+					if (this.selectedIndex === 0) {
+
+						$(".updateEnd").html("Wednesday, May 20, 2015 9:00 AM");
+						if ($("#units").size() > 1) {
+							while ($("#units option").size() > 1) $("#units option:last").remove();
+							while ($("#units option").size() < 1) {$("#units").append("<option value='"+($("#units option").size()+1)+"'>"+($("#units option").size()+1)+"</option>");}
+						}
+					}
+
+					updatePrice();
+				});
+
+				$("#units").bind("change", function() {
+
+					if (this.selectedIndex+1 > 1) {
+						$("#duration option[value='1']").remove();
+					}
+					else if ($("#duration option[value='1']").length === 0) {
+						$("#duration").append("<option value='1'>1 hour</option>");
+					}
+
+					updatePrice();
+				});
+
+				// We need an array of localised numbers for the slots drop down.
+				var localisedUnits = [
+
+					"1",
+
+					];
+
+				remail = /^[\s,;]*[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9][-a-z0-9]*(\.[-a-z0-9]+)*\.([a-z]{2,})|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?([\s,;]+[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9][-a-z0-9]*(\.[-a-z0-9]+)*\.([a-z]{2,})|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?)*[\s,;]*$/i;
+				rphone = /^\+?[0-9\(\)\- ]*[0-9][0-9][0-9\(\)\- ]*(?:\(?(?:e\.?|x\.?|ex\.?|ext\.?|exten\.?|extension) ?[0-9]+\)?)?$/;
+				r3 = /^[0-9]{3}$/;
+				r4 = /^[0-9]{4}$/;
+				rgroupon = /^[0-9A-F]{10}$/;
+
+				$("#theform").submit(function() {
+					success = true;
+
+
+
+					inp = $("input[name=field1]");
+
+					inp.removeClass("invalid");
+					erm = $("#error1");
+					erm.html("");
+					erm.hide();
+					$("#errorForm").hide();
+
+
+
+
+
+
+
+					inp = $("input[name=field2]");
+
+					inp.removeClass("invalid");
+					erm = $("#error2");
+					erm.html("");
+					erm.hide();
+					$("#errorForm").hide();
+
+
+
+
+
+
+
+					inp = $("input[name=field3]");
+
+					inp.removeClass("invalid");
+					erm = $("#error3");
+					erm.html("");
+					erm.hide();
+					$("#errorForm").hide();
+
+					if (!inp.val()) {
+						inp.addClass("invalid");
+						erm.html("This is a required field.");
+						erm.show();
+						success = false;
+					}
+
+
+					if (inp.val().length > 0 && !inp.val().match(remail)) {
+						inp.addClass("invalid");
+						erm.html("Please enter a valid email address.");
+						erm.show();
+						success = false;
+					}
+
+
+
+
+
+
+
+					inp = $("textarea[name=field4]");
+
+					inp.removeClass("invalid");
+					erm = $("#error4");
+					erm.html("");
+					erm.hide();
+					$("#errorForm").hide();
+
+
+
+
+
+
+					$("#kaptcha").removeClass("invalid");
+					$("#kaptchaRequired").hide();
+					if ($("#kaptcha").val().length == 0) {
+						$("#kaptcha").addClass("invalid");
+						$("#kaptchaRequired").show();
+						success = false;
+					}
+
+					if (typeof extraValidation !== 'undefined') success = extraValidation() && success;
+					if (success) {
+						$("#theform").hide();
+						$("#spinner").show();
+
+					}
+					else {
+						$("#errorForm").show();
+					}
+					return success;
+				});
+
+				function updatePrice() {
+					var slotUnits = 1;
+					if ($("#units").length > 0) slotUnits = slotUnits * $("#units").val();
+
+					if ($("#duration").length > 0) slotUnits = slotUnits * $("#duration").val();
+
+					if (slotUnits === 1) $(".updatePrice").html("$ 0.00");
+
+
+				}
+
+				function init() {
+
+
+				}
+
+				init();
+			})(jQuery);
+		</script>
