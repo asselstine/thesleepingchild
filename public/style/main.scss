@@ -1,11 +1,11 @@
-@import "style/guide",
-        "style_guide",
-        "style/landing_page/ad.scss",
-        "style/landing_page/carousel.scss",
-        "style/landing_page/services.scss",
-        "style/landing_page/splash.scss",
-        "style/landing_page/team.scss",
-        "style/landing_page/testimonials.scss";
+@import "_all",
+        "_style_guide",
+        "landing_page/_ad.scss",
+        "landing_page/_carousel",
+        "landing_page/_services",
+        "landing_page/_splash",
+        "landing_page/_team",
+        "landing_page/_testimonials";
 
 .center {
   text-align: center;

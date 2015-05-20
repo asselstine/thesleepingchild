@@ -1,0 +1,26 @@
+@import "../_buttons";
+
+.services {
+
+  .service {
+    display: inline-block;
+    padding: 2rem;
+    border: 1px solid $darkTropiteal;
+    border-radius: 7px;
+    text-align: center;
+
+    .serviceName a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: $darkTropiteal !important;
+    }
+
+    .serviceSelect {
+      margin-top: 2rem;
+      a {
+      @include plain-button;
+      }
+    }
+  }
+
+}

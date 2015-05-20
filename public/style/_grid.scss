@@ -1,6 +1,6 @@
-
-$medium-min: 768px;
-$large-min: 1200px;
+@import "bourbon/_bourbon",
+        "neat/_neat",
+        "_breakpoints";
 
 $small-only: new-breakpoint(max-width $medium-min);
 $medium-up: new-breakpoint(min-width $medium-min);

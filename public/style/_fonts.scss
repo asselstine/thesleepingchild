@@ -1,14 +1,14 @@
 @font-face {
 font-family: gothamrnd-light;
-src: url("fonts/gothamrnd-light.ttf") format("truetype");
+src: url("/fonts/gothamrnd-light.ttf") format("truetype");
 }
 @font-face {
 font-family: gothamrnd-medium;
-src: url("fonts/gothamrnd-medium.ttf") format("truetype");
+src: url("/fonts/gothamrnd-medium.ttf") format("truetype");
 }
 @font-face {
 font-family: gothamrnd-bold;
-src: url("fonts/gothamrnd-bold.ttf") format("truetype");
+src: url("/fonts/gothamrnd-bold.ttf") format("truetype");
 }
 
 $gothamrnd-light-family: 'gothamrnd-light' "roboto-light";
@@ -17,35 +17,35 @@ $gothamrnd-bold-family: 'gothamrnd-bold' "roboto-bold";
 
 @font-face {
 font-family: roboto-thin;
-src: url("fonts/Roboto/Roboto-Thin_0.ttf") format("truetype");
+src: url("/fonts/Roboto/Roboto-Thin_0.ttf") format("truetype");
 }
 @font-face {
 font-family: roboto-thin-italic;
-src: url("fonts/Roboto/Roboto-ThinItalic_0.ttf") format("truetype");
+src: url("/fonts/Roboto/Roboto-ThinItalic_0.ttf") format("truetype");
 }
 @font-face {
 font-family: roboto-light;
-src: url("fonts/Roboto/Roboto-Light_0.ttf") format("truetype");
+src: url("/fonts/Roboto/Roboto-Light_0.ttf") format("truetype");
 }
 @font-face {
 font-family: roboto-light-italic;
-src: url("fonts/Roboto/Roboto-LightItalic_0.ttf") format("truetype");
+src: url("/fonts/Roboto/Roboto-LightItalic_0.ttf") format("truetype");
 }
 @font-face {
 font-family: roboto-medium;
-src: url("fonts/Roboto/Roboto-Medium_0.ttf") format("truetype");
+src: url("/fonts/Roboto/Roboto-Medium_0.ttf") format("truetype");
 }
 @font-face {
 font-family: roboto-medium-italic;
-src: url("fonts/Roboto/Roboto-MediumItalic_0.ttf") format("truetype");
+src: url("/fonts/Roboto/Roboto-MediumItalic_0.ttf") format("truetype");
 }
 @font-face {
 font-family: roboto-bold;
-src: url("fonts/Roboto/Roboto-Bold_0.ttf") format("truetype");
+src: url("/fonts/Roboto/Roboto-Bold_0.ttf") format("truetype");
 }
 @font-face {
 font-family: roboto-black;
-src: url("fonts/Roboto/Roboto-Black_0.ttf") format("truetype");
+src: url("/fonts/Roboto/Roboto-Black_0.ttf") format("truetype");
 }
 
 

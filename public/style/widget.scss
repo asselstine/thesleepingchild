@@ -1,7 +1,8 @@
-@import "bourbon/_bourbon",
-        "neat/_neat",
-        "colours",
-        "grid";
+@import "_colours",
+        "_breakpoints",
+        "_buttons",
+        "widget/_calendar",
+        "widget/_services";
 
 body {
   margin: 0;
@@ -10,68 +11,10 @@ body {
 .header {
     display: none;
 }
-.gridHeader {
-  text-transform: uppercase;
-
-  h4 {
-    padding: 0.5rem;
-    margin: 0;
-    min-height: 3.5rem;
-    @include media($medium-up) {
-      font-size: 1.2em;
-      min-height: 4rem;
-    }
-  }
-}
-
-div.gridDays {
-}
-
-a {
-  @include a();
-}
-
-div.gridDay {
-
-  text-align: center;
-  display: inline-block;
-  width: 14.28%;
-  float: left;
-
-  &:last-child {
-    border-right: 1px solid $breezeBlocks;
-  }
-
-  .gridHeader, .gridSlot {
-    border-left: 1px solid $breezeBlocks;
-    border-bottom: 1px solid $breezeBlocks;
-  }
-
-  div.gridSlot a,
-  div.gridBusy {
-    padding: 0.2rem;
-    @include media($medium-up) {
-      padding: 1rem;
-    }
-  }
-
-  div.gridSlot {
-    a {
-      display: block;
-      color: #7FCDC4;
-      text-decoration: none;
-      transition: 0.2s;
-      &:hover {
-        color: white;
-        background-color: $breezeBlocks;
-      }
-    }
-  }
-
-}
 
 .body {
-  @include contain();
+  margin: 0 auto;
+  max-width: 68rem;
 }
 
 button {

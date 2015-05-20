@@ -1,0 +1,25 @@
+
+
+@mixin h1 {
+  font-family: $gothamrnd-bold-family;
+  font-size: 3rem;
+}
+
+@mixin h2 {
+  font-family: $gothamrnd-medium-family;
+  font-size: 2rem;
+  color: $darkTropiteal;
+}
+
+@mixin h3 {
+
+}
+
+@mixin body {
+  font-family: $gothamrnd-light-family;
+}
+
+@mixin a {
+  color: $darkTropiteal;
+  text-decoration: none;
+}
