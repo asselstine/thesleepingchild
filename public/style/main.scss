@@ -1,5 +1,4 @@
-@import "_all",
-        "_style_guide",
+@import "shared/_all",
         "landing_page/_ad.scss",
         "landing_page/_carousel",
         "landing_page/_services",
@@ -55,62 +54,6 @@ p em {
   padding: 1rem;
   @include contain();
 }
-
-
-
-
-
-
-
-
-
-header {
-  background-color: $darkTropiteal;
-  margin-bottom: 1rem;
-  @include clearfix();
-
-  .logo {
-    float: left;
-    max-width: 400px;
-    padding: 2rem 6rem 2rem 1rem;
-  }
-
-  nav {
-    float: right;
-    padding-top: 3rem;
-    padding-right: 2rem;
-    color: white;
-
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      li {
-        display: inline-block;
-        + li {
-          margin-left: 2rem;
-        }
-        a {
-          color: white;
-        }
-      }
-    }
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 section {

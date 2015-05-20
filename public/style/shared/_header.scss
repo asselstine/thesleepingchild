@@ -1,0 +1,40 @@
+header {
+  background-color: $darkTropiteal;
+  margin-bottom: 1rem;
+  @include clearfix();
+
+  .logo {
+    float: left;
+    max-width: 400px;
+    padding: 2rem 6rem 2rem 1rem;
+  }
+
+  nav {
+    float: right;
+    padding-top: 3rem;
+    padding-right: 2rem;
+    color: white;
+
+    .column {
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: inline-block;
+          + li {
+            margin-left: 2rem;
+          }
+          a {
+            color: white;
+          }
+        }
+      }
+
+    }
+
+
+  }
+
+}
