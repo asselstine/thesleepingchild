@@ -12,7 +12,15 @@
 }
 
 @mixin h3 {
+  font-family: $gothamrnd-medium-family;
+}
 
+@mixin h4 {
+  font-family: $gothamrnd-light-family;
+}
+
+@mixin h5 {
+  font-family: $gothamrnd-bold-family;
 }
 
 @mixin body {

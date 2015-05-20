@@ -1,9 +1,14 @@
 header
-  a(href='/')
-    img(src='/images/sleepingchild-logo-inverse.png' alt='The Sleeping Child').logo
+  .logo
+    a(href='/')
+      img(src='/images/sleepingchild-logo-inverse.png' alt='The Sleeping Child')
+    a.burger
+      .bar
+      .bar
+      .bar
   nav
     .column
-      h5.
+      h4.
         Services
       ul
         li(class="#{ current.source == 'evaluations' ? 'active' : '' }")
@@ -16,5 +21,10 @@ header
           a(href='/workshops') Workshops
 
     .column
-      h5.
+      h4.
         Contact
+      ul
+        li
+          a(href='tel:1-555-555-5555') <b>t.</b> +1 (555) 555-5555
+        li
+          a(href='mailto:info@thesleepingchild.com') <b>e.</b> info@thesleepingchild.com
