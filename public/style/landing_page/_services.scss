@@ -35,7 +35,7 @@
       }
 
       text-align: center;
-      padding-top: 1.7rem;
+      // padding-top: 1.7rem;
       img {
         max-width: 230px;
       }
@@ -47,11 +47,13 @@
     .description {
       text-align: center;
       vertical-align: top;
+      @include media($medium-up) {
+        text-align: left;
+      }
     }
     .description:not(:last-child) {
       @include media($medium-up) {
         @include span-columns(6);
-        text-align: left;
       }
       @include media($large-up) {
         @include span-columns(8);
