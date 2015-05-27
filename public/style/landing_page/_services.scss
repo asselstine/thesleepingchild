@@ -1,6 +1,11 @@
 .services {
   @include outer-container;
 
+
+  padding-left: $paddingSidesMobile;
+  padding-right: $paddingSidesMobile;
+
+
   h2 {
     text-align: center;
   }

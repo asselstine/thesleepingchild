@@ -11,7 +11,6 @@
   @include media($medium-up) {
     font-size: 2rem;
   }
-
   color: $darkTropiteal;
 }
 
@@ -21,6 +20,7 @@
 
 @mixin h4 {
   font-family: $gothamrnd-light-family;
+  margin: 0.5em 0;
 }
 
 @mixin h5 {
