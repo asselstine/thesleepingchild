@@ -7,11 +7,12 @@
 
   .service {
 
-    padding: 1rem;
-
     @include row();
 
-    padding-bottom: 2rem;
+    & + .service {
+      padding-top: 2rem;
+    }
+
     .button {
       background-color: $tropiteal;
       padding: 1rem 3.3rem;
@@ -28,7 +29,6 @@
 
       @include media($medium-up) {
         @include span-columns(6);
-        text-align: left;
       }
       @include media($large-up) {
         @include span-columns(4);
@@ -38,6 +38,10 @@
       padding-top: 1.7rem;
       img {
         max-width: 230px;
+      }
+
+      &::after {
+        @include clearfix();
       }
     }
     .description {

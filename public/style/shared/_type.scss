@@ -25,6 +25,12 @@
 
 @mixin h5 {
   font-family: $gothamrnd-bold-family;
+  margin: 0.75em 0;
+}
+
+@mixin h6 {
+  font-family: $gothamrnd-medium-family;
+  margin: 0.5em 0;
 }
 
 @mixin body {
