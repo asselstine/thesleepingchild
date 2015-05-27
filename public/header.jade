@@ -1,30 +1,3 @@
 header
-  .logo
-    a(href='/')
-      img(src='/images/sleepingchild-logo-inverse.png' alt='The Sleeping Child')
-    a.burger
-      .bar
-      .bar
-      .bar
-  nav
-    .column
-      h4.
-        Services
-      ul
-        li(class="#{ current.source == 'evaluations' ? 'active' : '' }")
-          a(href='/evaluations') Free Evaluations
-
-        li(class="#{ current.source == 'consultations' ? 'active' : '' }")
-          a(href='/consultations') Consultations
-
-        li(class="#{ current.source == 'workshops' ? 'active' : '' }")
-          a(href='/workshops') Workshops
-
-    .column
-      h4.
-        Contact
-      ul
-        li
-          a(href='tel:1-555-555-5555') <b>t.</b> +1 (555) 555-5555
-        li
-          a(href='mailto:info@thesleepingchild.com') <b>e.</b> info@thesleepingchild.com
+  include shared/_logo.jade
+  include shared/_nav.jade

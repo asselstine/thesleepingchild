@@ -1,0 +1,38 @@
+@import "_nav",
+        "_logo";
+
+footer {
+
+  // overflow: hidden;
+
+  &.on {
+    // overflow: visible;
+    nav {
+      transform: none;
+    }
+  }
+
+  > div {
+    position: relative;
+
+    @include logo-container;
+    @include nav-container;
+
+    nav {
+
+      clip: rect(200%, 0, 0, 0);
+
+      @include media($medium-up) {
+        clip: inherit;
+      }
+
+      @include media($small-only) {
+        bottom: 100%;
+        margin-top: 0;
+        transform: translateY(100%);
+      }
+    }
+
+  }
+
+}

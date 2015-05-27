@@ -1,0 +1,88 @@
+@import "_grid";
+
+@mixin nav-container {
+  background-color: $darkTropiteal;
+  @include row();
+  position: relative;
+  z-index: 2;
+  overflow: visible;
+
+  nav {
+
+    margin-top: -100%;
+    padding-top: 0;
+    padding: 1rem;
+    color: white;
+    @include span-columns(12);
+    @include media($medium-up) {
+      @include span-columns(8);
+      padding: 2rem;
+      margin-top: 0;
+    }
+    @include media($large-up) {
+      @include span-columns(6);
+    }
+
+    @include media($small-only) {
+      transition: 0.25s;
+      background: $darkTropiteal;
+      position: absolute;
+      left: 0;
+      z-index: 1;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .column {
+
+      margin-bottom: 1rem;
+
+      a {
+        transition: 0.25s;
+        &:hover {
+          color: white;
+        }
+      }
+
+      @include media($medium-up) {
+        float: left;
+
+        & + .column {
+          margin-left: 2rem;
+        }
+
+      }
+
+      h1,h2,h3,h4,h5 {
+        margin-top: 0;
+        margin-bottom: 0.5em;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 1.1rem;
+        li {
+          & + li {
+            margin-top: 0.5em;
+            @include media($medium-up) {
+              margin-top: 0;
+            }
+          }
+          display: block;
+          &, a {
+            color: $breezeBlocks;
+          }
+        }
+        li.active {
+          a {
+            color: white;
+          }
+        }
+      }
+
+    }
+
+
+  }
+}

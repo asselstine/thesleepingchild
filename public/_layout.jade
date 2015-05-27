@@ -1,9 +1,9 @@
 doctype
 html
   head
-    include layouts/html_head.jade
+    include /shared/_head.jade
   body
-    include header.jade
+    include /header.jade
     .contain
       != yield
-    include footer.jade
+    include /footer.jade
