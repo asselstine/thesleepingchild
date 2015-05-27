@@ -7,7 +7,11 @@
 
 @mixin h2 {
   font-family: $gothamrnd-medium-family;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  @include media($medium-up) {
+    font-size: 2rem;
+  }
+
   color: $darkTropiteal;
 }
 

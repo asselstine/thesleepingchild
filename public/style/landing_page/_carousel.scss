@@ -16,12 +16,14 @@
     position: relative;
     .overlay {
       position: absolute;
-      padding: 3rem;
+
       max-width: 500px;
       top: 0;
+      padding: 1.5rem;
       //background-color: $darkTropiteal;
       @include media($medium-up) {
         top: 3rem;
+        padding: 3rem;
       }
     }
   }
