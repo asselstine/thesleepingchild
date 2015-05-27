@@ -9,9 +9,10 @@
   }
 
   .m-item {
-    padding-left: $paddingSides;
-    padding-right: $paddingSides;
-    //position: absolute;
+    padding: 0 $paddingSidesMobile;
+    @include media($medium-up) {
+      padding: 0 $paddingSides;
+    }
   }
 
   color: $roseMelon;
@@ -35,13 +36,19 @@
       color: transparent;
     }
     a[data-m-slide='prev'] {
-      left: 2rem;
+      left: $paddingSidesMobile/2;
+      @include media($medium-up) {
+        left: 2rem;
+      }
       border-right: $controlSize solid $skydive;
       border-top: $controlSize*$verticalScale solid transparent;
       border-bottom: $controlSize*$verticalScale solid transparent;
     }
     a[data-m-slide='next'] {
-      right: 2rem;
+      right: $paddingSidesMobile/2;
+      @include media($medium-up) {
+        right: 2rem;
+      }
       border-left: $controlSize solid $skydive;
       border-top: $controlSize*$verticalScale solid transparent;
       border-bottom: $controlSize*$verticalScale solid transparent;

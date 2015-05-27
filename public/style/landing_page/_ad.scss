@@ -2,17 +2,34 @@
   background-color: $darkTropiteal;
   color: white;
   position: relative;
+  z-index: 0;
 
   padding-bottom: 4rem;
 
-  padding-left: $paddingSides;
-  padding-right: 40%;
+  @include media($medium-up) {
+    padding-left: $paddingSides;
+    padding-right: 40%;
+  }
+  padding: $paddingSidesMobile;
+
+
+  h1,h2,h3,h4,h5,h6 {
+    text-shadow: 0 0 1px black;
+    @include media($medium-up) {
+      text-shadow: none;
+    }
+  }
 
   img {
     position: absolute;
     top: 0;
+    z-index: -1;
     right: 3rem;
     max-width: 300px;
+    opacity: 0.5;
+    @include media($medium-up) {
+      opacity: 1;
+    }
   }
 
 }

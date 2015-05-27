@@ -4,9 +4,15 @@
   @include row();
 
   .member {
-    @include span-columns(6);
+    @include media($medium-up) {
+      @include span-columns(6);
+    }
+    @include span-columns(12);
     box-sizing: border-box;
-    padding: 3rem;
+    @include media($medium-up) {
+      padding: 3rem;
+    }
+    padding: $paddingSidesMobile;
   }
 
   img {
@@ -16,8 +22,11 @@
 
   > p {
     @include span-columns(12);
-    padding-left: $paddingSides;
-    padding-right: $paddingSides;
+
+    @include media($medium-up) {
+      padding: 0 $paddingSides;
+    }
+    padding: 0 $paddingSidesMobile;
   }
 
 }
