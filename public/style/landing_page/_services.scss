@@ -28,6 +28,7 @@
 
       @include media($medium-up) {
         @include span-columns(6);
+        text-align: left;
       }
       @include media($large-up) {
         @include span-columns(4);

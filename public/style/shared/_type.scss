@@ -35,3 +35,7 @@
   color: $darkTropiteal;
   text-decoration: none;
 }
+
+@mixin label {
+  font-family: $gothamrnd-medium-family;
+}
