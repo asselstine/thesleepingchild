@@ -4,6 +4,7 @@
   h2 {
     text-align: center;
   }
+
   .service {
 
     padding: 1rem;
@@ -19,6 +20,10 @@
       color: $roseMelon;
       font-family: $roboto-light-family;
     }
+    ul {
+      text-align: left;
+    }
+
     aside {
 
       @include media($medium-up) {
@@ -36,8 +41,11 @@
     }
     .description {
 
+      text-align: center;
+
       @include media($medium-up) {
         @include span-columns(6);
+        text-align: left;
       }
       @include media($large-up) {
         @include span-columns(8);
