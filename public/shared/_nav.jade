@@ -3,13 +3,13 @@ nav
     h4.
       Services
     ul
-      li(class="#{ current.source == 'evaluations' ? 'active' : '' }")
+      li(class="#{ current.path[0] == 'evaluations' ? 'active' : '' }")
         a(href='/evaluations') Free Evaluations
 
-      li(class="#{ current.source == 'consultations' ? 'active' : '' }")
+      li(class="#{ current.path[0] == 'consultations' ? 'active' : '' }")
         a(href='/consultations') One-on-One Consultations
 
-      li(class="#{ current.source == 'workshops' ? 'active' : '' }")
+      li(class="#{ current.path[0] == 'workshops' ? 'active' : '' }")
         a(href='/workshops') Workshops and Webinars
 
   .column

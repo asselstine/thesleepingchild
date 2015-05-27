@@ -14,7 +14,7 @@
     }
 
     .button {
-      background-color: $tropiteal;
+      @include plain-button($tropiteal);
       padding: 1rem 3.3rem;
     }
     h4 {
@@ -45,9 +45,10 @@
       }
     }
     .description {
-
       text-align: center;
-
+      vertical-align: top;
+    }
+    .description:not(:last-child) {
       @include media($medium-up) {
         @include span-columns(6);
         text-align: left;
@@ -55,8 +56,6 @@
       @include media($large-up) {
         @include span-columns(8);
       }
-
-      vertical-align: top;
     }
   }
 }
