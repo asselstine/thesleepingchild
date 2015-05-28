@@ -18,19 +18,26 @@
   font-family: $gothamrnd-medium-family;
 }
 
+@mixin headers {
+  margin: 0;
+}
+
 @mixin h4 {
   font-family: $gothamrnd-light-family;
-  margin: 0.5em 0;
+  padding: 0.5em 0;
+  @include headers;
 }
 
 @mixin h5 {
   font-family: $gothamrnd-bold-family;
-  margin: 0.75em 0;
+  padding: 0.75em 0;
+  @include headers;
 }
 
 @mixin h6 {
   font-family: $gothamrnd-medium-family;
-  margin: 0.5em 0;
+  padding: 0.5em 0;
+  @include headers;
 }
 
 @mixin body {

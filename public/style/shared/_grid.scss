@@ -4,6 +4,7 @@
 
 $small-only: new-breakpoint(max-width $medium-min);
 $medium-up: new-breakpoint(min-width $medium-min);
+$medium-only: new-breakpoint(min-width $medium-min max-width $large-min);
 $large-up: new-breakpoint(min-width $large-min);
 
 @mixin contain() {

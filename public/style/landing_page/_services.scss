@@ -40,6 +40,10 @@
       }
 
       text-align: center;
+
+      &:last-child {
+        text-align: left;
+      }
       // padding-top: 1.7rem;
       img {
         max-width: 230px;
@@ -56,6 +60,7 @@
         text-align: left;
       }
     }
+    aside + .description,
     .description:not(:last-child) {
       @include media($medium-up) {
         @include span-columns(6);
@@ -63,6 +68,81 @@
       @include media($large-up) {
         @include span-columns(8);
       }
+      @include omega;
+    }
+    .description + aside {
+      @include omega;
+    }
+
+    .package {
+      margin-bottom: 2rem;
+      text-align: center;
+
+      &.center {
+        @include media($medium-only) {
+          @include span-columns(4);
+          @include shift(4);
+        }
+      }
+      &.cols {
+        @include media($medium-only) {
+          @include span-columns(3);
+          @include omega(12n);
+        }
+      }
+
+      // @include media($large-up) {
+      //   @include span-columns(3);
+      //   @include omega(12n);
+      // }
+
+      *:nth-child(1) {
+        max-height: 4em;
+        padding: 1em 0 1.75em 0;
+      }
+      *:nth-child(2) {
+        max-height: 3em;
+        padding: 1em;
+      }
+      *:nth-child(3) {
+        min-height: 1em;
+        margin: 0;
+        padding: 0.5em 0;
+      }
+
+      @mixin package-section($bgColor: $papaya, $borderRadius: 12px, $darkenAmount: 5%) {
+        border: 1px solid darken($bgColor, $darkenAmount);
+        border-radius: $borderRadius;
+        *:nth-child(1) {
+          border-top-left-radius: $borderRadius;
+          border-top-right-radius: $borderRadius;
+          background: darken($bgColor, $darkenAmount);
+          color: white;
+        }
+        &, * {
+          color: $bgColor;
+        }
+        .button {
+          @include plain-button( darken($bgColor, $darkenAmount) );
+        }
+      }
+
+      &.papaya {
+        @include package-section($bgColor: $papaya);
+      }
+      &.roseMelon {
+        @include package-section($bgColor: $roseMelon);
+      }
+      &.tropiteal {
+        @include package-section($bgColor: $tropiteal);
+      }
+      &.skydive {
+        @include package-section($bgColor: $skydive);
+      }
     }
   }
+}
+
+.row {
+  @include row();
 }
