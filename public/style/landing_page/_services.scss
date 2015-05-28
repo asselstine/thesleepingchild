@@ -79,13 +79,13 @@
       text-align: center;
 
       &.center {
-        @include media($medium-only) {
+        @include media($medium-up) {
           @include span-columns(4);
           @include shift(4);
         }
       }
       &.cols {
-        @include media($medium-only) {
+        @include media($medium-up) {
           @include span-columns(3);
           @include omega(12n);
         }
