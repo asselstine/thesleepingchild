@@ -32,14 +32,12 @@
 
     aside {
 
-      @include media($medium-up) {
-        @include span-columns(6);
-      }
-      @include media($large-up) {
-        @include span-columns(4);
-      }
+      text-align: center;
 
-      // text-align: center;
+      @include media($medium-up) {
+        @include span-columns(4);
+        text-align: left;
+      }
 
       &:last-child {
         text-align: left;
@@ -63,9 +61,6 @@
     aside + .description,
     .description:not(:last-child) {
       @include media($medium-up) {
-        @include span-columns(6);
-      }
-      @include media($large-up) {
         @include span-columns(8);
       }
       @include omega;
@@ -90,11 +85,6 @@
           @include omega(12n);
         }
       }
-
-      // @include media($large-up) {
-      //   @include span-columns(3);
-      //   @include omega(12n);
-      // }
 
       *:nth-child(1) {
         max-height: 4em;

@@ -16,8 +16,8 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    max-height: 400px;
-    min-height: 332px;
+    max-height: 500px;
+    min-height: 365px;
 
     @include media($small-only) {
       background-image: none !important;
@@ -46,10 +46,11 @@
       position: absolute;
       width: 100%;
       top: 0;
-
+      padding: 1rem;
       //background-color: $darkTropiteal;
       @include media($medium-up) {
         top: 1rem;
+        padding: 2rem;
       }
 
       h2 {
@@ -89,7 +90,7 @@
     position: relative;
     margin: 0;
     color: white;
-    padding: 0 1em;
+    // padding: 0 1em;
     &::before,
     &::after {
       color: white;
@@ -106,7 +107,7 @@
     &::before {
       content: "\201C";
       position: absolute;
-      left: 0;
+      left: -0.8em;
     }
     &::after {
       content: "\201D";
