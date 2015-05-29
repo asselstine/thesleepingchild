@@ -1,18 +1,32 @@
+@mixin header-colour($color: white) {
+  h1,h2,h3,h4,h5,h6, blockquote {
+    font-family: $gothamrnd-light-family;
+    color: $color;
+  }
+}
+
 .carousel {
 
   @include media($small-only) {
     min-height: 400px;
   }
 
-  h1,h2,h3,h4,h5,h6, blockquote {
-    font-family: $gothamrnd-light-family;
-    color: white;
-  }
+  @include header-colour($color: white);
 
   font-size: 1.5em;
   margin-bottom: 1rem;
 
   .m-item {
+    color: white;
+
+    &.tropiteal {
+      @include header-colour($color: $tropiteal);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
     position: relative;
     .overlay {
       position: absolute;
@@ -22,8 +36,8 @@
       padding: 1.5rem;
       //background-color: $darkTropiteal;
       @include media($medium-up) {
-        top: 3rem;
-        padding: 3rem;
+        top: 1rem;
+        padding: 2rem;
       }
     }
   }
