@@ -2,6 +2,7 @@
 
 @mixin nav-container {
   background-color: $darkTropiteal;
+  
   @include row();
   position: relative;
   z-index: 2;

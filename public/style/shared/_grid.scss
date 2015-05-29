@@ -10,10 +10,4 @@ $large-up: new-breakpoint(min-width $large-min);
 @mixin contain() {
   @include outer-container;
   @include row();
-  > * {
-    @include media($medium-up) {
-      @include span-columns(10);
-      @include shift(1);
-    }
-  }
 }
