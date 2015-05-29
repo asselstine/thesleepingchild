@@ -3,23 +3,18 @@
 
 footer {
 
-  // overflow: hidden;
+  @include nav-container;
 
   &.on {
-    // overflow: visible;
+    overflow: visible;
     nav {
       transform: none;
     }
   }
 
   > div {
-    position: relative;
-
-    @include nav-container;
 
     nav {
-
-      clip: rect(200%, 0, 0, 0);
 
       @include media($medium-up) {
         clip: inherit;
@@ -31,6 +26,7 @@ footer {
         transform: translateY(100%);
       }
     }
+
 
   }
 
