@@ -9,7 +9,6 @@
 
   @include header-colour($color: white);
 
-  font-size: 1.5em;
   margin-bottom: 1rem;
 
   .m-item {
@@ -45,13 +44,16 @@
 
     .overlay {
       position: absolute;
-      max-width: 500px;
+      width: 100%;
       top: 0;
-      padding: 1.5rem;
+
       //background-color: $darkTropiteal;
       @include media($medium-up) {
         top: 1rem;
-        padding: 2rem;
+      }
+
+      h2 {
+        max-width: 500px;
       }
     }
   }
@@ -59,7 +61,7 @@
   .m-scooch-controls {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 1.5rem;
     left: 0;
     text-align: center;
 
@@ -87,6 +89,7 @@
     position: relative;
     margin: 0;
     color: white;
+    padding: 0 1em;
     &::before,
     &::after {
       color: white;
@@ -103,7 +106,7 @@
     &::before {
       content: "\201C";
       position: absolute;
-      left: -0.8em;
+      left: 0;
     }
     &::after {
       content: "\201D";

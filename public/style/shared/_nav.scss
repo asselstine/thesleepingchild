@@ -11,13 +11,14 @@
   .logo {
 
     padding: 1rem;
+    text-align: center;
 
     @include media($medium-up) {
       padding: 1.7rem;
       padding-left: 4rem;
+      text-align: left;
     }
 
-    text-align: center;
     position: relative;
     z-index: 2;
     background-color: $darkTropiteal;
@@ -87,6 +88,9 @@
         transform: rotate(-45deg) scale(1);
       }
     }
+    nav {
+      opacity: 1;
+    }
   }
 
   nav {
@@ -95,10 +99,12 @@
     padding-top: 0;
     padding: 1rem;
     color: white;
+    opacity: 0;
     @include span-columns(12);
     @include media($medium-up) {
       @include span-columns(8);
       margin-top: 0;
+      opacity: 1;
     }
     @include media($large-up) {
       @include span-columns(6);
@@ -147,7 +153,7 @@
           & + li {
             margin-top: 0.5em;
             @include media($medium-up) {
-              margin-top: 0;
+              margin-top: 0.25em;
             }
           }
           display: block;
