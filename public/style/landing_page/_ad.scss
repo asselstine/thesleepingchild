@@ -4,16 +4,15 @@
   position: relative;
   z-index: 0;
 
-  padding: 3rem 1rem;
   text-align: center;
 
   @include media($medium-up) {
     text-align: left;
-    padding-left: $paddingSides;
-    padding-right: 40%;
-    padding: 3rem;
   }
 
+  .contain {
+    position: relative;
+  }
 
 
   h1,h2,h3,h4,h5,h6 {
@@ -25,7 +24,7 @@
 
   img {
     position: absolute;
-    top: -1rem;
+    top: -3rem;
     z-index: -1;
     right: 1rem;
     max-width: 300px;
