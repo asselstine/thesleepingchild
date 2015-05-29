@@ -8,6 +8,5 @@ $medium-only: new-breakpoint(min-width $medium-min max-width $large-min);
 $large-up: new-breakpoint(min-width $large-min);
 
 @mixin contain() {
-  @include outer-container;
-  @include row();
+  @include outer-container;  
 }

@@ -2,11 +2,92 @@
 
 @mixin nav-container {
   background-color: $darkTropiteal;
-  
+
   @include row();
   position: relative;
   z-index: 2;
   overflow: visible;
+
+  .logo {
+
+    padding: 1rem;
+
+    @include media($medium-up) {
+      padding: 1.7rem;
+      padding-left: 4rem;
+    }
+
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background-color: $darkTropiteal;
+
+    @include media($medium-up) {
+      @include span-columns(4);
+      padding-right: 0;
+      padding-left: 1rem;
+    }
+    @include media($large-up) {
+      @include span-columns(6);
+    }
+
+    img {
+      width: 100%;
+      max-width: 200px;
+      @include media($medium-up) {
+        max-width: 400px;
+      }
+    }
+
+    a.burger {
+      cursor: pointer;
+      $thickness: 0.2rem;
+      $spread: 0.5rem;
+
+      @include media($medium-up) {
+        display: none;
+      }
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      width: 2rem;
+      .bar {
+        content: "";
+        display: block;
+        height: $thickness;
+        background-color: white;
+        transition: 0.5s;
+        & + .bar {
+          margin-top: $spread;
+        }
+
+        &:first-child {
+          transform-origin: left;
+        }
+        &:nth-child(2) {
+          transform-origin: center;
+        }
+        &:last-child {
+          transform-origin: left;
+        }
+      }
+
+    }
+  }
+
+  &.on {
+    .burger {
+      .bar:first-child {
+        transform: rotate(45deg) scale(1);
+      }
+      .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .bar:last-child {
+        transform: rotate(-45deg) scale(1);
+      }
+    }
+  }
 
   nav {
 
@@ -17,7 +98,6 @@
     @include span-columns(12);
     @include media($medium-up) {
       @include span-columns(8);
-      padding: 2rem;
       margin-top: 0;
     }
     @include media($large-up) {

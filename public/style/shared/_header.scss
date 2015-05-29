@@ -1,6 +1,5 @@
 header {
   margin-bottom: 1rem;
-  @include logo-container;
   @include nav-container;
 
   &.on {
