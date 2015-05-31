@@ -82,7 +82,13 @@
           @include shift(4);
         }
       }
-      &.cols {
+      &.cols3 {
+        @include media($medium-up) {
+          @include span-columns(4);
+          @include omega(9n);
+        }
+      }
+      &.cols4 {
         @include media($medium-up) {
           @include span-columns(3);
           @include omega(12n);
