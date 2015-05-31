@@ -6,10 +6,13 @@
 
   .m-scooch-inner {
     text-align: center;
+    & > * {
+      vertical-align: middle;
+    }
   }
 
   .m-item {
-    padding: 0 $paddingSidesMobile;
+    padding: 0 2rem;
     @include media($medium-up) {
       padding: 0 $paddingSides;
     }
