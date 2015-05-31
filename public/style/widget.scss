@@ -5,7 +5,13 @@
         "widget/_services";
 
 body {
-  margin: 0;
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 1rem;
+
+  @media screen and (max-width: $medium-min) {
+      font-size: 0.9em;
+  }
 }
 
 .header {
