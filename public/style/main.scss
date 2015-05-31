@@ -10,6 +10,16 @@
   text-align: center;
 }
 
+.no-padding {
+  padding: 0;
+}
+
+.show-for-small-only {
+  @include media($medium-up) {
+    display: none;
+  }
+}
+
 body{
   font-family: $roboto-light-family;
   color: $darkTropiteal;

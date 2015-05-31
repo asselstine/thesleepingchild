@@ -5,6 +5,10 @@
   }
 }
 
+body .m-scooch-inner {
+  @include transition-duration(2s);
+}
+
 .carousel {
 
   @include header-colour($color: white);
