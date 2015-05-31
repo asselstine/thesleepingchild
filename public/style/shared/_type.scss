@@ -25,6 +25,7 @@
 @mixin h4 {
   font-family: $gothamrnd-light-family;
   padding: 0.5em 0;
+  color: $roseMelon;
   @include headers;
 }
 
