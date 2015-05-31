@@ -3,6 +3,10 @@
 @mixin nav-container {
   background-color: $darkTropiteal;
 
+  h4 {
+    color: white;
+  }
+
   @include row();
   position: relative;
   z-index: 2;
