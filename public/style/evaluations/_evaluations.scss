@@ -2,4 +2,8 @@ section.evaluations {
   h4 {
     color: $roseMelon;
   }
+
+  h4 + * {
+    margin-top: 0;
+  }
 }

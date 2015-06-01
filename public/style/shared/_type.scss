@@ -8,6 +8,7 @@
 @mixin h2 {
   font-family: $gothamrnd-medium-family;
   font-size: 1.5rem;
+  text-align: center;
   @include media($medium-up) {
     font-size: 2rem;
   }
@@ -21,7 +22,7 @@
 
 @mixin h3 {
   font-family: $gothamrnd-medium-family;
-
+  color: $roseMelon;
   b {
     font-weight:normal;
     font-family: $roboto-medium-italic-family;
