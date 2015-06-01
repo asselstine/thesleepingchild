@@ -5,6 +5,21 @@ footer {
 
   @include nav-container;
 
+  .credits {
+    padding-bottom: 0.5rem;
+    opacity: 0.5;
+    color: white;
+    font-size: 0.5em;
+    text-align: center;
+    font-family: $roboto-light-italic-family;
+
+    a {
+      color: white;
+      font-family: $roboto-light-family;
+    }
+
+  }
+
   &.on {
     overflow: visible;
     nav {
