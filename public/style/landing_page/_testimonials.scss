@@ -20,38 +20,38 @@
 
   color: $roseMelon;
   font-family: $roboto-thin-italic-family;
-  
 
-  .m-scooch-controls {
-    $controlSize: 14px;
-    $verticalScale: 0.8;
-    a {
-      position: absolute;
-      top: 50%;
-      display: block;
-      width: 0;
-      height: 0;
-      padding: 0;
-      margin-top: -1 * $controlSize * $verticalScale;
-      color: transparent;
+}
+
+.m-scooch-controls.arrows {
+  $controlSize: 14px;
+  $verticalScale: 0.8;
+  a {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin-top: -1 * $controlSize * $verticalScale;
+    color: transparent;
+  }
+  a[data-m-slide='prev'] {
+    left: $paddingSidesMobile/2;
+    @include media($medium-up) {
+      left: 2rem;
     }
-    a[data-m-slide='prev'] {
-      left: $paddingSidesMobile/2;
-      @include media($medium-up) {
-        left: 2rem;
-      }
-      border-right: $controlSize solid $skydive;
-      border-top: $controlSize*$verticalScale solid transparent;
-      border-bottom: $controlSize*$verticalScale solid transparent;
+    border-right: $controlSize solid $skydive;
+    border-top: $controlSize*$verticalScale solid transparent;
+    border-bottom: $controlSize*$verticalScale solid transparent;
+  }
+  a[data-m-slide='next'] {
+    right: $paddingSidesMobile/2;
+    @include media($medium-up) {
+      right: 2rem;
     }
-    a[data-m-slide='next'] {
-      right: $paddingSidesMobile/2;
-      @include media($medium-up) {
-        right: 2rem;
-      }
-      border-left: $controlSize solid $skydive;
-      border-top: $controlSize*$verticalScale solid transparent;
-      border-bottom: $controlSize*$verticalScale solid transparent;
-    }
+    border-left: $controlSize solid $skydive;
+    border-top: $controlSize*$verticalScale solid transparent;
+    border-bottom: $controlSize*$verticalScale solid transparent;
   }
 }

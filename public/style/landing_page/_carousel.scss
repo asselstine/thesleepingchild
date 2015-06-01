@@ -71,32 +71,7 @@ body .m-scooch-inner {
     }
   }
 
-  .m-scooch-controls {
-    position: absolute;
-    width: 100%;
-    bottom: 1.5rem;
-    left: 0;
-    text-align: center;
 
-    a[data-m-slide] {
-      $slideSize: 1.3rem;
-
-      &.m-active {
-        background-color: $skydive;
-      }
-      background-color: rgba($breezeBlocks, 0.5);
-      width: $slideSize;
-      height: $slideSize;
-      color: transparent;
-      border-radius: 50%;
-      display: inline-block;
-
-      & + a[data-m-slide] {
-        margin-left: $slideSize/2;
-      }
-    }
-
-  }
 
   blockquote {
     position: relative;
@@ -123,6 +98,33 @@ body .m-scooch-inner {
     }
     &::after {
       content: "\201D";
+    }
+  }
+
+}
+
+.m-scooch-controls.m-scooch-bulleted {
+  position: absolute;
+  width: 100%;
+  bottom: 1.5rem;
+  left: 0;
+  text-align: center;
+
+  a[data-m-slide] {
+    $slideSize: 1.3rem;
+
+    &.m-active {
+      background-color: $skydive;
+    }
+    background-color: rgba($breezeBlocks, 0.5);
+    width: $slideSize;
+    height: $slideSize;
+    color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+
+    & + a[data-m-slide] {
+      margin-left: $slideSize/2;
     }
   }
 
