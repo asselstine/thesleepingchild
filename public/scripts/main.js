@@ -17,6 +17,6 @@ $(document).ready(function () {
     $(this).closest('header, footer').toggleClass("on");
   });
 
-  //enable_scrolling_carousel();
+  enable_scrolling_carousel();
 
 });
