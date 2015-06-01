@@ -1,5 +1,10 @@
-function enable_scrolling_carousel() {
-  window.setInterval(function () {
+var scrollTimer = null;
+
+function reset_scrolling_carousel() {
+  if (scrollTimer) {
+    window.clearInterval(scrollTimer);
+  }
+  scrollTimer = window.setInterval(function () {
     $(".m-scooch").each(function () {
       if ($(this).find('.m-active').is(":last-child")) {
         $(this).scooch('move', 1);
@@ -13,10 +18,14 @@ function enable_scrolling_carousel() {
 $(document).ready(function () {
 
   $(".m-scooch").scooch();
+  $(".m-scooch-controls a").click(function () {
+    reset_scrolling_carousel();
+  });
+
   $("a.burger").click(function () {
     $(this).closest('header, footer').toggleClass("on");
   });
 
-  enable_scrolling_carousel();
+  reset_scrolling_carousel();
 
 });
