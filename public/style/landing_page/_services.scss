@@ -18,6 +18,10 @@
 
   .service {
 
+    > h4 {
+      text-align: center;
+    }
+
     @include row();
 
     & + .service {
