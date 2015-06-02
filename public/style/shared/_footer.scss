@@ -7,15 +7,20 @@ footer {
 
   .credits {
     padding-bottom: 0.5rem;
-    opacity: 0.5;
-    color: white;
     font-size: 0.5em;
     text-align: center;
     font-family: $roboto-light-italic-family;
 
+    *, a {
+      color: rgb(147,206,206);
+    }
+
     a {
-      color: white;
+      transition: 0.5s;
       font-family: $roboto-light-family;
+      &:hover {
+        color: white;
+      }
     }
 
   }
