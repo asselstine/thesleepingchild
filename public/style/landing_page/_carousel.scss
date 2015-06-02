@@ -50,8 +50,9 @@ body .m-scooch-inner {
       }
     }
 
-    h2 {
+    h3 {
       font-size: 1.6rem;
+      max-width: 500px;
     }
 
     .overlay {
@@ -65,9 +66,6 @@ body .m-scooch-inner {
         padding: 2rem;
       }
 
-      h2 {
-        max-width: 500px;
-      }
     }
   }
 
