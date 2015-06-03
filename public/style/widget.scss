@@ -23,8 +23,17 @@ body {
   max-width: 68rem;
 }
 
-button {
+button,
+input[type='submit'] {
   @include plain-button;
+  display: inline-block;
+  width: auto;
+  margin: 0.5em 0;
+}
+
+.timeZone input[type='submit'] {
+  font-size: 0.8em;
+  padding: 0.5em 0.7em;
 }
 
 textarea {
