@@ -2,9 +2,9 @@
         "../neat/_neat",
         "_breakpoints";
 
-$small-only: new-breakpoint(max-width $medium-min);
+$small-only: new-breakpoint(max-width ($medium-min - 1));
 $medium-up: new-breakpoint(min-width $medium-min);
-$medium-only: new-breakpoint(min-width $medium-min max-width $large-min);
+$medium-only: new-breakpoint(min-width $medium-min max-width ($large-min - 1));
 $large-up: new-breakpoint(min-width $large-min);
 
 @mixin contain() {
